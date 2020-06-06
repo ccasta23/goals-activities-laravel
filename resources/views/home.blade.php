@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Este es el sistema administrativo. Aqui podrás hacer el CRUD de los recursos. <a href="/goals">Ver Objetivos</a>
                 </div>
             </div>
         </div>

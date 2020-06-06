@@ -1,4 +1,4 @@
-# Proyecto de Objetivos y Actividades
+# Proyecto Web con el Framework Laravel
 
 Este proyecto es el resultado de un curso de programación para entornos web usando el framework de Laravel impartido en la Universidad de Caldas para el programa de ingeniería informática.
 
@@ -18,8 +18,32 @@ Este proyecto es el resultado de un curso de programación para entornos web usa
 - Eloquent como ORM usado por Laravel. [Documentación Oficial](https://laravel.com/docs/7.x/eloquent) 
 - Relación entre modelos de la base de datos. [Documentación Oficial](https://laravel.com/docs/7.x/eloquent-relationships)
 
+## Puesta a punto del proyecto
+
+Para poner en funcionamiento el proyecto, se debe clonar el repositorio actual realizar los siguientes pasos:
+
+**Prerequisitos:** Tener instalado el gestor de paquetes Composer. Tener instalado Node (Para la interfaz gráfica de inicio de sesión)
+
+1. Ejecutar el comando de instalación de paquetes de PHP Composer.
+
+`composer install`
+
+1. Ejecutar el comando de instalación de paquetes de Javascript npm.
+
+`npm install`
+
+1. Crear el archivo `.env` basado en el archivo `.env.example` incluido en el repositorio. Luego de tener el archivo creado se deben configurar las variables de conexión a la base de datos y las variables de autenticación al servidor de correos electrónicos (Para probar se puede usar [Mailtrap](https://mailtrap.io/)).
+
+1. A continuación, se deben ejecutar las migraciones para que se creen las tablas de la base de datos, esto se realiza con el siguiente comando.
+
+`php artisan migrate`
+
+1. Finalmente se ejecuta la aplicación, se registra un nuevo usuario y ya se pueden crear nuevos recursos.
+
+`php artisan serve`
+
 ## Documentación del curso
 
 Para más información de la creación del proyecto, dejo abierto el [documento oficial](https://docs.google.com/document/d/1-KdYgFyCFy1WHatkPmzu7eqYMPBOyOZ9-RKSQrciv_I/edit?usp=sharing) en donde explico paso por paso la creación del proyecto actual desde la puesta a punto del entorno de trabajo hasta dejar la aplicación totalmente funcional. En el documento dejo referencias a documentación y cursos que permiten complementar el conocimiento visto.
 
-*Creado por*: Carlos Castañeda
+**Creado por**: Carlos Andres Castañeda Osorio
