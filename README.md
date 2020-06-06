@@ -20,25 +20,29 @@ Este proyecto es el resultado de un curso de programación para entornos web usa
 
 ## Puesta a punto del proyecto
 
-Para poner en funcionamiento el proyecto, se debe clonar el repositorio actual realizar los siguientes pasos:
+Para poner en funcionamiento el proyecto, se debe clonar el repositorio actual y posteriormente en la carpeta del proyecto realizar los siguientes pasos:
 
-**Prerequisitos:** Tener instalado el gestor de paquetes Composer. Tener instalado Node (Para la interfaz gráfica de inicio de sesión)
+### Prerequisitos
+
+- Tener instalado el gestor de paquetes Composer.
+- Tener instalado Node con su gestor de paquetes nmp (Para la interfaz gráfica de inicio de sesión).
+- Tener instalado un motor de bases de datos. Puedes ser Postgresql o MySql.
+- Tener instalado PHP.
+
+### Instrucciones
 
 1. Ejecutar el comando de instalación de paquetes de PHP Composer.
-
 `composer install`
 
-1. Ejecutar el comando de instalación de paquetes de Javascript npm.
-
+2. Ejecutar el comando de instalación de paquetes de Javascript npm.
 `npm install`
 
-1. Crear el archivo `.env` basado en el archivo `.env.example` incluido en el repositorio. Luego de tener el archivo creado se deben configurar las variables de conexión a la base de datos y las variables de autenticación al servidor de correos electrónicos (Para probar se puede usar [Mailtrap](https://mailtrap.io/)).
+3. Crear el archivo `.env` basado en el archivo `.env.example` incluido en el repositorio. Luego de tener el archivo creado se deben configurar las variables de conexión a la base de datos y las variables de autenticación al servidor de correos electrónicos (Para probar se puede usar [Mailtrap](https://mailtrap.io/)).
 
-1. A continuación, se deben ejecutar las migraciones para que se creen las tablas de la base de datos, esto se realiza con el siguiente comando.
-
+4. A continuación, se deben ejecutar las migraciones para que se creen las tablas de la base de datos, esto se realiza con el siguiente comando.
 `php artisan migrate`
 
-1. Finalmente se ejecuta la aplicación, se registra un nuevo usuario y ya se pueden crear nuevos recursos.
+5. Finalmente se ejecuta la aplicación, se registra un nuevo usuario y ya se pueden crear nuevos recursos.
 
 `php artisan serve`
 

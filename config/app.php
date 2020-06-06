@@ -54,6 +54,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'app_email_reports' => env('APP_EMAIL_REPORTS', 'carlos.castaneda@ucaldas.edu.co'),
+
     'asset_url' => env('ASSET_URL', null),
 
     /*

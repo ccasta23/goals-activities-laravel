@@ -11,7 +11,6 @@
             <div class="col-6">
                 <form action="{{route('goals.sendEmail', $goal)}}" method="post">
                     @csrf
-                    <input type="email" class="form-control" name="email">
                     <button
                         type="submit"
                         class="btn btn-primary btn-block mb-3"
@@ -20,6 +19,13 @@
                 </form>
             </div>
         </div>
+        @if (session('status'))
+            <div class="row">
+                <div class="alert alert-success col-12" role="alert">
+                    {{ session('status') }}
+                </div>
+            </div>
+        @endif
     </div>
     <div class="container">
         <div class="row">

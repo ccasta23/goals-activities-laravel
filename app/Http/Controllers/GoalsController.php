@@ -148,7 +148,7 @@ class GoalsController extends Controller
     }
 
     public function sendEmail(Request $request, Goal $goal){
-        Mail::to($request->get('email'))->send(new GoalReport($goal));
-        return back();
+        Mail::to(env('app_email_reports', 'carlos.castaneda@ucaldas.edu.co'))->send(new GoalReport($goal));
+        return back()->with('status', 'Correo enviado satisfactoriamente');
     }
 }
